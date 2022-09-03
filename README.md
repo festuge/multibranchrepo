@@ -1,2 +1,1 @@
-# multibranchrepo
-to analyse multi-branch pipeline 
+# testgit-hook
