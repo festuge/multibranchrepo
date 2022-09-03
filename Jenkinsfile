@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('git-clone'){
             steps{
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/festuge/testgit-hook.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-id', url: 'https://github.com/festuge/multibranchrepo.git']]])
             }
         }
         stage('stage-paralle'){
