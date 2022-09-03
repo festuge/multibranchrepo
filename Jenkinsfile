@@ -35,5 +35,14 @@ pipeline{
                 echo "webhook fixed"
             }
         }
+        stage('second-parallel'){
+            parallel{
+                stage('to-test-multibuild'){
+                    steps{
+                        sh 'lscp'
+                    }
+                }
+            }
+        }
     }
 }
