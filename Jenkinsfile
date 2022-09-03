@@ -39,7 +39,7 @@ pipeline{
             parallel{
                 stage('to-test-multibuild'){
                     steps{
-                        sh 'lscp'
+                        sh 'lscpu'
                     }
                 }
             }
